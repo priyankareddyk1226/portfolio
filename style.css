@@ -1,0 +1,269 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #ffffff;
+    color: #111;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 800;
+    color: #ff3f8e;
+}
+
+.navbar a {
+    margin-left: 28px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+}
+
+.navbar a:hover {
+    color: #ff3f8e;
+}
+
+/* HOME */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 70px;
+}
+
+.home-text h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #000;
+}
+
+.home-text span {
+    color: #ff3f8e;
+}
+
+.home-text p {
+    margin: 18px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 32px;
+    background-color: #ff3f8e;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(255, 63, 142, 0.35);
+}
+
+.btn:hover {
+    background-color: #e6327c;
+}
+
+.profile-img {
+    width: 400px;        /* increase size */
+    height: 400px;       /* keep circle */
+    border-radius: 50%;
+    object-fit: cover;   /* prevents stretching */
+    border: 6px solid #ff4f9a;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* SECTIONS */
+.section {
+    padding: 90px 70px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.section h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: #ff3f8e;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.section p {
+    max-width: 760px;
+    margin: 25px auto 0;
+    font-size: 17px;
+    font-weight: 500;
+    color: #222;
+}
+
+/* EDUCATION */
+.edu-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.edu-card {
+    background-color: #ffffff;
+    width: 270px;
+    padding: 30px 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.edu-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff3f8e;
+}
+
+.edu-card span {
+    display: block;
+    margin: 8px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* SKILLS */
+.skill-box {
+    margin-top: 30px;
+}
+
+.skill-box span {
+    display: inline-block;
+    padding: 12px 22px;
+    margin: 8px;
+    background-color: #f8f8f8;
+    border: 2px solid #ff3f8e;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+
+
+
+/* PROJECTS */
+.project-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    width: 250px;
+    padding: 28px;
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    text-align: left;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.35s ease;
+}
+
+/* 🔥 HOVER EFFECT */
+.card:hover {
+    background-color: #fff0f6;
+    border-color: #ff3f8e;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(255, 63, 142, 0.35);
+}
+
+/* 🔥 CLICK / TOUCH EFFECT */
+.card:active {
+    background-color: #ffe0ec;
+    border-color: #ff3f8e;
+    transform: scale(0.97);
+}
+
+/* 🔥 KEYBOARD / SELECT EFFECT */
+.card:focus-within {
+    background-color: #fff0f6;
+    border-color: #ff3f8e;
+}
+
+/* TEXT COLOR CHANGE */
+.card:hover h3,
+.card:active h3 {
+    color: #ff3f8e;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.card p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+}
+
+/* CONTACT */
+.contact p {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+    background-color: #f7f7f7;
+    padding: 25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-img {
+        margin-top: 40px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
